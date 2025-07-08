@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import pizza from "../assets/pizza.jpg";
 
 export default function HomePage() {
@@ -8,7 +9,7 @@ export default function HomePage() {
           <img src={pizza} alt="Sliding image" className="h-[22rem] w-[100%]" />
         </div>
         <div>
-          <div className=" mt-[4rem]">
+          <div className=" mt-[3rem]">
             <h1 className="text-[2.2rem] uppercase gradient2 font-bold family-Montserrat max-w-[28rem] leading-[1.4]">
               NextLevel Food for NextLevel Foodies
             </h1>
@@ -16,9 +17,13 @@ export default function HomePage() {
               Taste & share food from all over the world.
             </p>
           </div>
-          <div className="">
-            {/* <Link href="/community">Join the Community</Link>
-            <Link href="/meals">Explore Meals</Link> */}
+          <div className="flex gap-8 items-center mt-7">
+            <p className="text-[1.4rem] text-amber-400 ">Join our community</p>
+            <Link to={"meals"}>
+              <button className="py-2 px-4 bg-amber-600 rounded-[9px] hover:bg-amber-700 cursor-pointer text-[#fff] text-[1.1rem] font-bold">
+                Explore Meals
+              </button>
+            </Link>
           </div>
         </div>
       </header>

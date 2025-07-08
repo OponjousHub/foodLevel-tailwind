@@ -3,6 +3,7 @@ import RootLayout from "./pages/rootLayout.jsx";
 import "./index.css";
 import HomePage from "./pages/homePage.jsx";
 import MealsPage from "./pages/mealsPage.jsx";
+import CommunityPage from "./pages/communityPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "meals",
         element: <MealsPage />,
+      },
+      {
+        path: "community",
+        element: <CommunityPage />,
       },
     ],
   },
