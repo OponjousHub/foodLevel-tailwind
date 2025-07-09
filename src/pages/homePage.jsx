@@ -20,9 +20,7 @@ export default function HomePage() {
           <div className="flex gap-8 items-center mt-7">
             <p className="text-[1.4rem] text-amber-400 ">Join our community</p>
             <Link to={"meals"}>
-              <button className="py-2 px-4 bg-amber-600 rounded-[9px] hover:bg-amber-700 cursor-pointer text-[#fff] text-[1.1rem] font-bold">
-                Explore Meals
-              </button>
+              <button className="btnCSS">Explore Meals</button>
             </Link>
           </div>
         </div>

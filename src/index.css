@@ -42,6 +42,9 @@ body {
   .gradient2 {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-[#f9b241] to-[#fd4715];
   }
+  .btnCSS {
+    @apply py-2 px-4 bg-amber-600 rounded-[9px] hover:bg-amber-700 cursor-pointer text-[#fff] text-[1.1rem] font-bold;
+  }
   .span {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-[#f9b241] to-[#fd4715];
   }
@@ -61,6 +64,6 @@ body {
     @apply w-[7rem] block my-[0] mx-[auto];
   }
   .community-form {
-    @apply w-[60%] mx-auto border-1 border-solid border-amber-50 px-[3rem]  rounded-2xl;
+    @apply w-[60%] mx-auto border-1 border-solid border-amber-50 px-[3rem]  rounded-2xl pb-10 my-20;
   }
 }
