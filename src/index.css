@@ -34,7 +34,7 @@ body {
 
 @layer components {
   .container {
-    @apply w-[100%] m-auto;
+    @apply m-auto;
   }
   .gradient1 {
     @apply bg-gradient-to-r from-[#4e2a18] to-[#fd4715];
@@ -45,7 +45,7 @@ body {
   .btnCSS {
     @apply py-2 px-4 bg-amber-600 rounded-[9px] hover:bg-amber-700 cursor-pointer text-[#fff] text-[1.1rem] font-bold;
   }
-  .span {
+  span {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-[#f9b241] to-[#fd4715];
   }
   .gradientbtn {

@@ -4,6 +4,7 @@ import "./index.css";
 import HomePage from "./pages/homePage.jsx";
 import MealsPage from "./pages/mealsPage.jsx";
 import CommunityPage from "./pages/communityPage.jsx";
+import ShearMealPage from "./pages/shear-mealPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "meals",
         element: <MealsPage />,
+      },
+      {
+        path: "meals/shear",
+        element: <ShearMealPage />,
       },
       {
         path: "community",
