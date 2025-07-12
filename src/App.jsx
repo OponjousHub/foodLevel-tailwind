@@ -2,9 +2,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./pages/rootLayout.jsx";
 import "./index.css";
 import HomePage from "./pages/homePage.jsx";
-import MealsPage from "./pages/mealsPage.jsx";
+import MealsPage, { loader as mealsLoader } from "./pages/mealsPage.jsx";
 import CommunityPage from "./pages/communityPage.jsx";
 import ShearMealPage from "./pages/shear-mealPage.jsx";
+import MealDetailPage, {
+  loader as mealDetailLoader,
+} from "./pages/mealsDetailPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,12 +21,12 @@ const router = createBrowserRouter([
       {
         path: "meals",
         element: <MealsPage />,
-        children: [
-          {
-            path: ":mealId",
-            element: <mealDetailPage />,
-          },
-        ],
+        loader: mealsLoader,
+      },
+      {
+        path: "meals/:mealId",
+        element: <MealDetailPage />,
+        loader: mealDetailLoader,
       },
       {
         path: "meals/shear",
