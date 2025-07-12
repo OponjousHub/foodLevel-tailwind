@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import burger from "../assets/burger.jpg";
 
 function MealsDetailPage() {
+  const data = useLoaderData();
   return (
     <>
       <header className="flex gap-[3rem] container">
@@ -41,3 +42,12 @@ function MealsDetailPage() {
   );
 }
 export default MealsDetailPage;
+
+export async function loader({ params }) {
+  const param = params.mealId;
+
+  const response = await fetch(`http://127.0.0.1:4000/api/v1/meals/${param}`);
+  if (response.ok) return response;
+
+  return response;
+}

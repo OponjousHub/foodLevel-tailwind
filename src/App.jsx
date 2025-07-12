@@ -18,6 +18,12 @@ const router = createBrowserRouter([
       {
         path: "meals",
         element: <MealsPage />,
+        children: [
+          {
+            path: ":mealId",
+            element: <mealDetailPage />,
+          },
+        ],
       },
       {
         path: "meals/shear",
